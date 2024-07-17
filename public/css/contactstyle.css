@@ -1,0 +1,221 @@
+.contact-header {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/img/service-img/design-build.webp');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.contactheader-content {
+    margin-bottom: 280px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+.contactheader-content h1 {
+    font-size: 7vmin;
+    margin-bottom: 30px;
+}
+
+.contactus {
+    margin: 80px auto;
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.contactus .contact-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contactus .contact-content h2 {
+    font-size: 7vmin;
+    font-weight: 400;
+    color: var(--second-test);
+}
+
+.contactus .contact-content p {
+    font-weight: 300;
+    color: var(--second-test);
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.contact-container .contact-contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    gap: 2rem;
+}
+
+.contact-container .contact-contactInfo .contact-box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contact-container .contact-contactInfo .contact-box .contact-icon {
+    color: var(--green);
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contact-container .contact-contactInfo .contact-box .contact-text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #121212;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contact-text img {
+    width: 70px;
+    height: 70px;
+}
+
+.contact-container .contact-contactInfo .contact-box .contact-text h3 {
+    color: #121212;
+    font-weight: 500;
+}
+
+.contact-Form {
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.contact-Form .contact-inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.contact-Form .contact-inputBox input,
+.contact-Form .contact-inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
+.contact-Form .contact-inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: var(--second-test);
+}
+
+.contact-Form .contact-inputBox input:focus~span,
+.contact-Form .contact-inputBox input:valid~span,
+.contact-Form .contact-inputBox textarea:focus~span,
+.contact-Form .contact-inputBox textarea:valid~span {
+    color: var(--green);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-Form .contact-inputBox input[type="submit"] {
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.contact-Form .contact-inputBox input[type="submit"]:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.explore {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/img/explore-walpaper.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #28a745;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.explore-content {
+    margin: 80px auto;
+    width: 100%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explore-content .line {
+    width: 150px;
+    height: 4px;
+    background: #28a745;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+}
+
+.explore-content p {
+    color: whitesmoke;
+    width: 50%;
+}
+
+.explore-btn {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 24px;
+    border: 1px solid #fff;
+}
+
+.explore-btn:hover {
+    color: #fff;
+    background-color: black;
+}

@@ -1,0 +1,202 @@
+.about-head {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/img/service-img/design-build.webp');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #28a745;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.aboutheader-content {
+    margin-bottom: 280px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+.aboutheader-content h1 {
+    font-size: 7vmin;
+    margin-bottom: 30px;
+}
+
+
+.about-header {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 80px auto;
+}
+
+.about-header h1 {
+    font-size: 7vmin;
+    font-weight: 400;
+    color: var(--second-test);
+}
+
+.about-header p {
+    color: var(--second-test);
+    font-weight: 300;
+}
+
+.about-wrapper {
+    width: 80%;
+    margin: 80px auto;
+    padding: 10px 20px;
+}
+
+.about {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about2 {
+    padding-top: 30px;
+    gap: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: .4s ease;
+    box-shadow: 0px 0px 4px gray;
+}
+
+.about-image:hover img {
+    transform: scale(1.1);
+}
+
+.about-content {
+    flex: 1;
+
+}
+
+.about-content h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: var(--second-test);
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--second-test);
+}
+
+.about-ceo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 80px auto;
+}
+
+
+.about-ceo h3 {
+    color: #28a745;
+    font-size: 5vmin;
+}
+
+.about-ceo h2 {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.author p {
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.author img {
+    border-radius: 80px;
+    width: 300px;
+    height: 300px;
+}
+
+.explore {
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/img/explore-walpaper.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.explore-content {
+    margin: 80px auto;
+    width: 100%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explore-content .line {
+    width: 150px;
+    height: 4px;
+    background: #28a745;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+}
+
+.explore-content p {
+    color: whitesmoke;
+    width: 50%;
+}
+
+.explore-btn {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 24px;
+    border: 1px solid #fff;
+}
+
+.explore-btn:hover {
+    color: #fff;
+    background-color: black;
+}
