@@ -9,7 +9,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>BRickStick - Masonry Services</title>
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('css/media.css') }}">
         <link rel="icon" type="image/jpg" href="{{ asset('/favicon.ico') }}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     </head>
