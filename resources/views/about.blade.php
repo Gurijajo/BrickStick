@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     @include('schema')
     @include('header')
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Learn about BRickStick, specializing in masonry repair with over 200 projects completed. Discover our commitment to quality and customer satisfaction.">
     <title>{{ $title }}</title>
+    <link rel="canonical" href="{{ url()->current() }}">
     <link rel="stylesheet" href="{{ asset('css/aboutstyle.css') }}">
+    <link rel="canonical" href="{{ url()->current() }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
     <link rel="preload" as="image" href="{{ asset('img/service-img/design-build.webp') }}">
     <link rel="preload" as="image" href="{{ asset('img/explore-walpaper.webp') }}">
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('site.webmanifest') }}">
 </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJWQ85QW8S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LJWQ85QW8S');
+    </script>
 <body>
     <header class="about-head">
         <div class="aboutheader-content">

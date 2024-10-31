@@ -1,8 +1,14 @@
 @include('header')
 <head>
     <title>{{ $title }}</title>
+     @include('schema')
     <link rel="preload" as="image" href="{{ asset('img/walpaper3.webp') }}">
     <link rel="preload" as="image" href="{{ asset('img/explore-walpaper.webp') }}">
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+        <link rel="canonical" href="{{ url()->current() }}">
     <meta name="description" content="Experience seamless project delivery with BRickStick's design-build services. From conceptualization to completion, we manage both design and construction phases efficiently. Contact us to learn more!">
     <meta name="keywords" content="design-build services, integrated design and construction, collaborative planning, cost efficiency, BRickStick">
     <meta name="robots" content="index, follow">
@@ -10,6 +16,14 @@
     <link rel="stylesheet" href="{{ asset('css/servicesstyle.css') }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
 </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJWQ85QW8S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LJWQ85QW8S');
+    </script>
 <header class="services-header">
     <div class="servicesheader-content">
         <h1>Design-Build Services</h1>

@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     @include('schema')
     <link rel="preload" as="image" href="{{ asset('img/walpaper3.webp') }}">
     <link rel="preload" as="image" href="{{ asset('img/explore-walpaper.webp') }}">
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+        <link rel="canonical" href="{{ url()->current() }}">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Expert BATT insulation installation services at BRickStick. Enhance comfort and energy efficiency with fiberglass or mineral wool BATT insulation in walls, ceilings, and floors. Reduce heating costs, enhance acoustic comfort, and choose eco-friendly materials.">
@@ -13,6 +22,14 @@
     <link rel="stylesheet" href="{{ asset('css/servicesstyle.css') }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
 </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJWQ85QW8S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LJWQ85QW8S');
+    </script>
 <body>
     @include('header')
 

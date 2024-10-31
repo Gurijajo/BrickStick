@@ -1,16 +1,29 @@
 @include('header')
 <head>
     <title>{{ $title }}</title>
+     @include('schema')
     <link rel="preload" as="image" href="{{ asset('img/walpaper3.webp') }}">
     <link rel="preload" as="image" href="{{ asset('img/explore-walpaper.webp') }}">
-    <meta name="description" content="Transform your home's foundation with BRickStick's expert stone veneer installation services. Enhance your property's appeal with durable, stylish stone veneer options. Contact us for customized stone veneer solutions!">
-    <meta name="keywords" content="stone veneer installation, foundation stone veneer, stone veneer services, BRickStick">
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+        <meta name="description" content="Transform your home's foundation with BRickStick's expert stone veneer installation services. Enhance your property's appeal with durable, stylish stone veneer options. Contact us for customized stone veneer solutions!">
+         <meta name="keywords" content="stone veneer installation, stone veneer installation cost, exterior stone veneer installation, stone veneer installation details, thin stone veneer installation, stone veneer installation near me, natural stone veneer installation, Ellis + Fisher stone veneer installation video, cost of stone veneer installation per sq ft, interior stone veneer installation">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('css/servicesstyle.css') }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
+    <link rel="canonical" href="{{ url()->current() }}">
 </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJWQ85QW8S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-LJWQ85QW8S');
+    </script>
 <header class="services-header">
     <div class="servicesheader-content">
         <h1>Adding Stone Veneer to Foundation</h1>

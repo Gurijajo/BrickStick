@@ -1,15 +1,29 @@
 @include('header')
 <head>
     <title>{{ $title }}</title>
+     @include('schema')
     <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('site.webmanifest') }}">
     <link rel="preload" as="image" href="{{ asset('img/service-img/design-build.webp') }}">
     <link rel="preload" as="image" href="{{ asset('img/explore-walpaper.webp') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('css/gallerystyle.css') }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
+    <link rel="canonical" href="{{ url()->current() }}">
     <meta name="description" content="Explore the recent works of BRickStick, showcasing our expertise in masonry, chimney repair, stone veneer installation, and more. Discover our innovative solutions and commitment to excellence through our gallery of completed projects.">
     <meta name="keywords" content="recent works, masonry repair, chimney repair, stone veneer, fireplace construction, walkway restoration, stair repair, basement services, BATT insulation, design build, stone wall construction, BRickStick">
 </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJWQ85QW8S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LJWQ85QW8S');
+    </script>
 <header class="gallery-header">
     <div class="galleryheader-content">
         <h1>Gallery</h1>
@@ -26,7 +40,7 @@
     <div class="gallery-wrapper" id="gallery-wrapper">
         <div class="gallery-container">
             <div class="image-links">
-                <span class="gallery-link link-active" data-name="all">All Images</span>
+           {{--   <span class="gallery-link link-active" data-name="all">All Images</span>
                 <span class="gallery-link" data-name="masonry">Masonry</span>
                 <span class="gallery-link" data-name="chimney">Chimney</span>
                 <span class="gallery-link" data-name="fireplace">Fireplace</span>
@@ -36,7 +50,10 @@
                 <span class="gallery-link" data-name="design-build">Design-Build</span>
                 <span class="gallery-link" data-name="batt-insulation">BATT Insulation</span>
                 <span class="gallery-link" data-name="stone-wall">Stone Wall</span>
+                <span class="gallery-link" data-name="patio">Patio</span>
+                <span class="gallery-link" data-name="railing">Railing</span>
             </div>
+            --}}
             <div class="image-wrapper"> 
                 <div class="recent-img" data-name="fireplace"><img src="{{ asset('img/gallery-img/fireplace/fireplace1.webp') }}" alt="Fireplace 1" loading="lazy"> </div>
                 <div class="recent-img" data-name="fireplace"><img src="{{ asset('img/gallery-img/fireplace/fireplace2.webp') }}" alt="Fireplace 2" loading="lazy"> </div>
@@ -60,6 +77,9 @@
                 <div class="recent-img" data-name="walkway"><img src="{{ asset('img/gallery-img/walkway/walkway9.webp') }}" alt="Walkway 9"loading="lazy">   </div>
                 <div class="recent-img" data-name="walkway"><img src="{{ asset('img/gallery-img/walkway/walkway10.webp') }}" alt="Walkway 10"loading="lazy" > </div>
                 <div class="recent-img" data-name="walkway"><img src="{{ asset('img/gallery-img/walkway/walkway11.webp') }}" alt="Walkway 11" loading="lazy" > </div>
+                <div class="recent-img" data-name="walkway"><img src="{{ asset('img/gallery-img/walkway/walkway15.webp') }}" alt="Walkway 15" loading="lazy" > </div>
+                <div class="recent-img" data-name="walkway"><img src="{{ asset('img/gallery-img/walkway/walkway14.webp') }}" alt="Walkway 14" loading="lazy" > </div>
+                <div class="recent-img" data-name="walkway"><img src="{{ asset('img/gallery-img/walkway/walkway16.webp') }}" alt="Walkway 16" loading="lazy" > </div>
                 <div class="recent-img" data-name="stone-wall"><img src="{{ asset('img/gallery-img/stone-wall/stone-wall1.webp') }}" alt="Stone Wall 1" loading="lazy"> </div>
                 <div class="recent-img" data-name="stone-wall"><img src="{{ asset('img/gallery-img/stone-wall/stone-wall2.webp') }}" alt="Stone Wall 2" loading="lazy"> </div>
                 <div class="recent-img" data-name="stone-wall"><img src="{{ asset('img/gallery-img/stone-wall/stone-wall3.webp') }}" alt="Stone Wall 3" loading="lazy"> </div>
@@ -73,10 +93,28 @@
                 <div class="recent-img" data-name="stairs"><img src="{{ asset('img/gallery-img/stairs/stairs5.webp') }}" alt="Stairs 5" loading="lazy">  </div>
                 <div class="recent-img" data-name="stairs"><img src="{{ asset('img/gallery-img/stairs/stairs6.webp') }}" alt="Stairs 6" loading="lazy"> </div>
                 <div class="recent-img" data-name="stairs"><img src="{{ asset('img/gallery-img/stairs/stairs7.webp') }}" alt="Stairs 7" loading="lazy"> </div>
+                <div class="recent-img" data-name="stairs"><img src="{{ asset('img/gallery-img/stairs/stairs8.webp') }}" alt="Stairs 8" loading="lazy"> </div>
+                <div class="recent-img" data-name="stairs"><img src="{{ asset('img/gallery-img/stairs/stairs11.webp') }}" alt="Stairs 11" loading="lazy"> </div>
                 <div class="recent-img" data-name="masonry"><img src="{{ asset('img/gallery-img/masonry-cleaning/masonry1.webp') }}" alt="Masonry 1" loading="lazy"> </div>
                 <div class="recent-img" data-name="masonry"><img src="{{ asset('img/gallery-img/masonry-cleaning/masonry2.webp') }}" alt="Masonry 2" loading="lazy"> </div>
                 <div class="recent-img" data-name="masonry"><img src="{{ asset('img/gallery-img/masonry-cleaning/masonry3.webp') }}" alt="Masonry 3" loading="lazy"> </div>
                 <div class="recent-img" data-name="masonry"><img src="{{ asset('img/gallery-img/masonry-cleaning/masonry-cleaning.webp') }}" alt="Masonry Cleaning" loading="lazy"> </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/patio/Patio.webp') }}" alt="patio" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/patio/patio1.webp') }}" alt="patio" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/patio/patio2.webp') }}" alt="patio" loading="lazy" > </div>
+                <div class="recent-img" data-name="railing"><img src="{{ asset('img/services-img/railing-repair.webp') }}" alt="railinig" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2433.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2432.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2389.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2388.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2385.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2383.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2378.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2374.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2366.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2362.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+                <div class="recent-img" data-name="patio"><img src="{{ asset('img/gallery-img/img/IMG_2363.webp') }}" alt="Masonry Services" loading="lazy" > </div>
+            </div>
             </div>
         </div>
     </div>

@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Discover expert masonry services at BRickStick. We specialize in small masonry repairs, affordable masonry solutions, stonewall cleaning, stone wall repair, concrete repair, driveway repair, brick stair repair, stairway makeovers, and more. Our stucco services include re-stucco, stucco repair, cleaning, restoration, and a variety of exterior finishes like sand, dash, and skip trowel. Enhance your interiors with interior stone veneer repairs, backsplashes, and decorative applications. We also excel in retaining wall repairs, chimney maintenance, and foundation repairs. Trust BRickStick for reliable, budget-friendly solutions across Boston.">
-        <meta name="keywords" content="masonry, stucco, chimney repairs">
-        <meta name="author" content="BRickStick">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>BRickStick - Masonry Services</title>
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-        <link rel="icon" type="image/jpg" href="{{ asset('/favicon.ico') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     </head>
 <body>

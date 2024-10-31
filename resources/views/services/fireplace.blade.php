@@ -1,8 +1,14 @@
 @include('header')
 <head>
     <title>{{ $title }}</title>
+     @include('schema')
+             <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('site.webmanifest') }}">
     <link rel="preload" as="image" href="{{ asset('img/walpaper3.webp') }}">
     <link rel="preload" as="image" href="{{ asset('img/explore-walpaper.webp') }}">
+    <link rel="canonical" href="{{ url()->current() }}">
     <meta name="description" content="Enhance your existing brick fireplace with BRickStick's professional brick or stone veneer installation services. Choose from various veneer options to match your style. Contact us to upgrade your fireplace today!">
     <meta name="keywords" content="brick veneer installation, stone veneer installation, fireplace renovation, BRickStick">
     <meta name="robots" content="index, follow">
@@ -10,6 +16,14 @@
     <link rel="stylesheet" href="{{ asset('css/servicesstyle.css') }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
 </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJWQ85QW8S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LJWQ85QW8S');
+    </script>
 <header class="services-header">
     <div class="servicesheader-content">
         <h1>Brick or Stone Veneer Installation on Existing Brick Fireplaces</h1>

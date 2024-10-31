@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRickStick - Masonry Repair and Restoration</title>
-    <meta name="description" content="BRickStick specializes in masonry repair, chimney repair, masonry cleaning, walkway construction, and more. Contact us in Westborough for all your masonry needs.">
-    <meta name="keywords" content="BRickStick, masonry repair, chimney repair, masonry cleaning, walkway construction, Westborough, stone repair, foundation repair">
     <link rel="stylesheet" href="{{ asset('css/footerstyle.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/media.css') }}">
 </head>
 <body>
     <section class="footer">
@@ -39,7 +34,7 @@
             </div>
             <div class="footer-box">
                 <h3>Contact Us</h3>
-                <a href="https://maps.app.goo.gl/j6NnEN2mjcVgrv627" title="BRickStick Westborough Location"><i class="bi bi-geo-alt-fill"></i> Westborough</a>
+                <a href="https://maps.app.goo.gl/j6NnEN2mjcVgrv627" title="BRickStick Westborough Location"><i class="bi bi-geo-alt-fill"></i> Westborough, MA</a>
                 <a href="tel:+17744621027" title="BRickStick Phone Number"><i class="bi bi-telephone"></i> (774) 462-1027</a>
                 <a href="tel:+17744636458" title="BRickStick Alternate Phone Number"><i class="bi bi-telephone"></i> (774) 463-6458</a>
             </div>

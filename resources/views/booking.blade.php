@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     @include('schema')
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get a quote for masonry repair, chimney services, insulation, and more with BRickStick. Schedule your service today.">
@@ -11,7 +12,20 @@
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
     <link rel="preload" as="image" href="{{ asset('img/service-img/design-build.webp') }}">
     <link rel="preload" as="image" href="{{ asset('img/explore-walpaper.webp') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+        <link rel="canonical" href="{{ url()->current() }}">
 </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJWQ85QW8S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LJWQ85QW8S');
+    </script>
 <body>
     @include('header')
 
@@ -31,7 +45,7 @@
         <div class="contact-container">
             <div class="contact-contactInfo">
                 <div class="contact-box">
-                    <div class="contact-icon"><i class="bi bi-clock"></i></div>
+                    <div class="contact-icon"><i class="bi bi-credit-card-2-front"></i></div>
                     <div class="contact-text">
                         <h3>New Payments</h3>
                         <p>
@@ -41,6 +55,13 @@
                             <img src="{{ asset('img/content-img/mastercard.svg') }}" alt="Mastercard">
                             <img src="{{ asset('img/content-img/amex.svg') }}" alt="American Express">
                         </p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-icon"><i class="bi bi-percent"></i></div>
+                    <div class="contact-text">
+                        <h3>Discount</h3>
+                        <p>10% Military/First Responders</p>
                     </div>
                 </div>
                 <div class="contact-box">
@@ -91,9 +112,11 @@
                     </div>
                     <div class="parent-inputbox">
                         <div class="booking-inputBox">
+                            <label>Date</label>
                             <input type="date" id="date" name="date" required>
                         </div>
                         <div class="booking-inputBox">
+                            <label>Category</label>
                             <select id="categorySelect" name="categorySelect">
                                 <option value="Category Select">Category Select</option>
                                 <option value="Masonry Repair, Restoration & Chimney Repair Services">Masonry Repair, Restoration & Chimney Repair Services</option>
