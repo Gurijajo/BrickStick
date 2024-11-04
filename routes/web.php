@@ -74,3 +74,7 @@ Route::get('services/patio', function () {
 Route::get('services/railing-repair', function () {
     return view('services/railing-repair', ['title' => 'Railing Repair and Restoration Services | BRickStick']);
 });
+Route::get('/christmas', function () {
+    return view('/christmas', ['title' => 'Christmas toys | BRickStick']);
+})->name("christmas");
+

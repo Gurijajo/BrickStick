@@ -19,6 +19,7 @@
                     <li><a href="{{url('gallery')}}" class="nav-link">Gallery</a></li>
                     <li><a href="{{url('about')}}" class="nav-link">About Us</a></li>
                     <li><a href="{{url('contact')}}" class="nav-link">Contact</a></li>
+                    <li><a href="{{route('christmas')}}" class="nav-link">Christmas</a></li>
                 </ul>
                 <a href="{{url('booking')}}" class="booking-btn btn">Get a Quote!</a>
             </div>

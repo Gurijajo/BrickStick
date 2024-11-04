@@ -80,7 +80,10 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="home-service-img"><img src="{{ asset('img/gallery-img/walkway/walkway11.webp') }}" alt="Paver Walkways"></div>
+                <div class="images-flex">
+                    <div class="home-service-img"><img src="{{ asset('img/gallery-img/walkway/walkway11.webp') }}" alt="Paver Walkways"></div>
+                    <div class="home-service-img christmas-border"><img src="{{ asset('img/christmas-home.webp') }}" alt="Christmas Home"></div>
+                </div>
                 <h4>Paver Walkways</h4>
                 <p>At BRickStick, our approach is precise: we focus only on areas needing attention, akin to a dentist treating decay. After pinpointing damaged mortar, we meticulously clean with Oxiclean to ensure optimal adhesion between old and new materials, transforming curb appeal dramatically. Using polymer-modified mortar applied via a mortar or grout bag sets us apart; unlike traditional methods, it enhances durability and aesthetics immediately. Unlike competitors, we avoid harmful acid washing, completing our process swiftly—often within a day—without compromising existing bricks' integrity.</p>
                 <a href="{{ url('service') }}" class="btn home-btn" title="Learn more about our services">More Services</a>
